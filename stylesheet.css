@@ -1,0 +1,148 @@
+body {
+	background-color: #ececec;
+	margin-top: 0px;
+}
+
+@font-face { 
+	font-family: 'Roboto';
+	src: url('Fonts/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto Thin';
+	src: url('Fonts/Roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto Light Italic';
+	src: url('Fonts/Roboto/Roboto-LightItalic.ttf');
+}
+
+.content {
+	padding-top: 35px;
+	text-align: center;
+	font-family: 'Roboto';
+}
+
+.content h2 {
+	margin: 5px;
+	font-family: 'Roboto Thin';
+	font-size: 2.5em;
+	letter-spacing: 5px;
+}
+
+.content p {
+	width: 65%;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content img {
+	padding-top:10px;
+}
+
+.header {
+	padding-top: 60px;
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 1em;
+}
+
+.header a {
+	color: black;
+	text-decoration: none;
+}
+
+.header h1 {
+	font-family: 'Roboto Thin';
+	color: #990033;
+	font-size: 4em;
+	margin: 10px;
+}
+
+.navbar {
+	background-color: #ececec;
+	opacity: 0.8;
+	margin-top: 0px;
+	width:100%;
+	position: fixed;
+	font-size: 2.25em;
+	font-family:'Roboto Thin';
+	text-align: center;
+}
+
+.navbar a {
+	text-align: center;
+	text-decoration: none;
+	color: #990033;
+}
+
+.resume {
+	padding-top: 35px;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Roboto';
+	font-size: 1em;
+}
+
+.resume h2 {
+	margin-top: 5px;
+	text-align: center;
+	font-family: 'Roboto Thin';
+	font-size: 2.5em;
+}
+
+.resume .section h3 {
+	margin: 5px;
+	font-family: 'Roboto';
+	font-size: 2em;
+	color: #990033;
+}
+
+.resume .section hr {
+	margin: 3px;
+}
+
+
+.sub {
+	width: 75%;
+	padding:10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Roboto';
+}
+
+.sub .date {
+	float: right;
+}
+
+.sub h4 {
+	margin: 0px;
+	font-size: 1.5em;
+	font-weight:heavy;
+}
+
+.skills	{
+	width: 75%;
+	padding:10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Roboto';
+}
+
+.skills	 h4 {
+	margin: 0px;
+	font-size: 1.5em;
+	font-weight:heavy;
+}
+
+.skills .list {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+
