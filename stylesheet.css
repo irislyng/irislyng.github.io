@@ -1,6 +1,9 @@
 body {
 	background-color: #ececec;
-	margin: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
 }
 
 @font-face { 
@@ -27,7 +30,7 @@ body {
 
 
 .header {
-	padding-top: 60px;
+	padding-top: 2.5em;
 	text-align: center;
 	font-family: 'Roboto';
 	font-size: 1.25em;
@@ -43,6 +46,10 @@ body {
 	color: #990033;
 	font-size: 4em;
 	margin: 10px;
+}
+
+.header p {
+	margin-bottom: 0px;
 }
 
 .navbar {
@@ -63,7 +70,7 @@ body {
 }
 
 .section {
-	padding-top: 35px;
+	padding-top: 2em;
 	width:80%;
 	margin-left: auto;
 	margin-right: auto;
@@ -82,7 +89,7 @@ body {
 .section p {
 	width: 65%;
 	margin-top:20px;
-	margin-bottom:20px;
+	margin-bottom:0px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
