@@ -130,8 +130,11 @@ body {
 	float:left;
 }
 
-.sub h4 {
+.sub .title {
 	width: 100%;
+}
+
+.sub h4 {
 	margin: 0px;
 	font-size: 1.5em;
 	font-weight:heavy;
