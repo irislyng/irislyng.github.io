@@ -1,6 +1,6 @@
 body {
 	background-color: #ececec;
-	margin-top: 0px;
+	margin: 0px;
 }
 
 @font-face { 
@@ -25,36 +25,12 @@ body {
 	}
 }
 
-.content {
-	padding-top: 35px;
-	text-align: center;
-	font-family: 'Roboto';
-}
-
-.content h2 {
-	margin: 5px;
-	font-family: 'Roboto Thin';
-	font-size: 2.5em;
-}
-
-.content p {
-	width: 65%;
-	margin-top:20px;
-	margin-bottom:20px;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 1em;
-}
-
-.content img {
-	padding-top:10px;
-}
 
 .header {
 	padding-top: 60px;
 	text-align: center;
 	font-family: 'Roboto';
-	font-size: 1em;
+	font-size: 1.25em;
 }
 
 .header a {
@@ -86,7 +62,7 @@ body {
 	color: #990033;
 }
 
-.resume {
+.section {
 	padding-top: 35px;
 	width:80%;
 	margin-left: auto;
@@ -95,24 +71,34 @@ body {
 	font-size: 1em;
 }
 
-.resume h2 {
+.section h2 {
 	margin-top: 5px;
 	text-align: center;
 	font-family: 'Roboto Thin';
-	font-size: 2.5em;
+	font-size: 3em;
+	border-bottom: 2px dashed gray;
 }
 
-.resume .section h3 {
+.section p {
+	width: 65%;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 1em;
+}
+
+.section img {
+	padding-top:10px;
+}
+
+.section .subsection h3 {
 	margin: 5px;
 	font-family: 'Roboto';
 	font-size: 2em;
 	color: #990033;
 }
-
-.resume .section hr {
-	margin: 3px;
-}
-
 
 .sub {
 	width: 75%;
