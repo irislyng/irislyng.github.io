@@ -131,6 +131,7 @@ body {
 }
 
 .sub h4 {
+	width: 100%;
 	margin: 0px;
 	font-size: 1.5em;
 	font-weight:heavy;
