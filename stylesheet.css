@@ -53,7 +53,7 @@ body {
 
 .navbar {
 	background-color: #ececec;
-	opacity: 0.8;
+	/*opacity: 0.8;*/
 	margin-top: 0px;
 	width:100%;
 	position: fixed;
