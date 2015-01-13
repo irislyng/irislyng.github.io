@@ -94,10 +94,12 @@ body {
 }
 
 .section .subsection h3 {
+	width:100%;
 	margin: 5px;
 	font-family: 'Roboto';
 	font-size: 2em;
 	color: #990033;
+	float:left;
 }
 
 .sub {
@@ -106,11 +108,15 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Roboto';
-	font-size: 1em;
 }
 
 .sub .date {
 	float: right;
+}
+
+.sub .desc {
+	float: left;
+	width: 100%;
 }
 
 .sub h4 {
