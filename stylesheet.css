@@ -28,7 +28,6 @@ body {
 	}
 }
 
-
 .header {
 	padding-top: 2.5em;
 	text-align: center;
@@ -72,6 +71,7 @@ body {
 .section {
 	padding-top: 2em;
 	width:80%;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Roboto';
@@ -100,6 +100,11 @@ body {
 	padding-top:10px;
 }
 
+.section .subsection {
+	width: 100%;
+	display: block;
+}
+
 .section .subsection h3 {
 	width:100%;
 	margin: 5px;
@@ -107,58 +112,74 @@ body {
 	font-size: 2em;
 	color: #990033;
 	float:left;
+	text-align: center;
+	padding-bottom: 5px;
 }
 
-.sub {
+.section .subsection a {
+	width: 100%;
+	margin: 5px;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Roboto';
+	font-size: 1.5em;
+	color: #990033;
+}
+
+
+.section .subsection .sub {
 	width: 75%;
 	padding:10px;
+	overflow: auto;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Roboto';
 }
 
-.sub .date {
+.section .subsection .sub .date {
 	float: right;
+	height:auto;
 }
 
-.sub .desc {
+.section .subsection .sub .desc {
 	float: left;
 	width: 100%;
+	height: auto;
 }
 
-.sub .info {
+.section .subsection .sub .info {
 	float:left;
+	height: auto;
 }
 
-.sub .title {
+.section .subsection .sub .title {
 	width: 100%;
 	float: left;
+	height: auto;
 }
 
-.sub .title h4 {
+.section .subsection .sub .title h4 {
 	margin: 0px;
 	font-size: 1.5em;
 	font-weight:heavy;
 }
 
-.skills	{
-	width: 75%;
-	padding:10px;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: 'Roboto';
-}
 
-.skills	 h4 {
+.section .subsection .sub h4 {
 	margin: 0px;
 	font-size: 1.5em;
 	font-weight:heavy;
 }
 
-.skills .list {
+.section .subsection .sub .list {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	padding-left: 20px;
 }
+
+
+
 
 
