@@ -4,6 +4,7 @@ body {
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-bottom: 20px;
+	font-family: 'Roboto', Arial;
 }
 
 @font-face { 
@@ -87,7 +88,7 @@ body {
 }
 
 .section p {
-	width: 65%;
+	width: 80%;
 	margin-top:20px;
 	margin-bottom:0px;
 	margin-left: auto;
@@ -97,7 +98,8 @@ body {
 }
 
 .section img {
-	padding-top:10px;
+	width: 200px;
+	height:auto;
 }
 
 .section .subsection {
