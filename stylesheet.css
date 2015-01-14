@@ -151,6 +151,10 @@ body {
 	height: auto;
 }
 
+.section .subsection .sub .desc ul {
+	width:90%;
+}
+
 .section .subsection .sub .info {
 	float:left;
 	height: auto;
