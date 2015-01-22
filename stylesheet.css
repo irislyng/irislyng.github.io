@@ -57,15 +57,18 @@ body {
 	margin-top: 0px;
 	width:100%;
 	position: fixed;
+	color: #000;
 	font-size: 2.25em;
 	font-family:'Roboto Thin';
 	text-align: center;
 	padding-bottom: 0.3em;
+	border-bottom: 1px solid rgba(213,213,213,1);
 }
 
 .navbar a {
 	text-align: center;
 	text-decoration: none;
+	font-weight: heavy;
 	color: #990033;
 }
 
