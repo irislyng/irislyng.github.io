@@ -43,24 +43,24 @@ a:hover{
 	width:100%;
 	position: fixed;
 	color: #ececec;
-	font-size: 2.25em;
 	font-family:'Roboto Thin';
 	text-align: center;
 }
 
 
-.header p {
+.header .navbar {
 	width: 50%;
 	float:right;
 	font-family:'Roboto Thin';
 	text-align: center;	
+	font-size: 2em;
 	margin-bottom: 10px;
 }
 
-.header a {
+.header .navbar a {
 	text-align: center;
 	text-decoration: none;
-	font-size: 0.75em;
+	font-size: 1em;
 	color: #ececec;
 }
 
@@ -73,7 +73,7 @@ a:hover{
 .header .info h1 {
 	font-family: 'Roboto Thin';
 	color: #ececec;
-	font-size: 2.1em;
+	font-size: 4em;
 	margin: 0px;
 }
 
