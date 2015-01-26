@@ -3,7 +3,7 @@ body {
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-bottom: 20px;
+	margin-bottom: 1px;
 	font-family: 'Open Sans', Arial;
 }
 
@@ -53,7 +53,8 @@ a:hover{
 	font-family:'Roboto Thin';
 	text-align: center;	
 	font-size: 2em;
-	margin-bottom: 20px;
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
 }
 
 .header .navbar a {
@@ -61,6 +62,14 @@ a:hover{
 	text-decoration: none;
 	font-size: 1em;
 	color: #ececec;
+}
+
+.header .navbar img {
+	width:50px;
+	vertical-align: middle;
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+
 }
 
 .header .info {
@@ -87,6 +96,7 @@ a:hover{
 
 .section h2 {
 	margin-top: 5px;
+	margin-bottom: 18px;
 	text-align: center;
 	font-family: 'Roboto Thin';
 	font-size: 3em;
@@ -191,20 +201,16 @@ a:hover{
 }
 
 .footer {
+	border-top: 1px solid #c2c2c2;
+	width: 100%;
 	background-color: #ececec;
-	position: fixed;
-	right: 2em;
-	bottom: 0.5em;
+	font-size: 0.85em;
+	text-align: center;
+	color: #990033;
 	font-family:'Open Sans';
 }
 
-.footer a{
-	color: #505050;
-	text-decoration: none;
-	font-size: 4em;
-	font-weight: bolder;
-}
-
-.footer a:hover{
-	color: #990033;
+.footer p {
+	text-transform: uppercase;
+	margin-bottom: 0;
 }
