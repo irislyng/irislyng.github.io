@@ -204,7 +204,8 @@ a:hover{
 	border-top: 1px solid #c2c2c2;
 	width: 100%;
 	background-color: #ececec;
-	font-size: 0.85em;
+	font-size: 0.80em;
+	font-weight: bold;
 	text-align: center;
 	color: #990033;
 	font-family:'Open Sans';
