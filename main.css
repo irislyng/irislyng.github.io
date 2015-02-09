@@ -4,7 +4,7 @@ body {
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-bottom: 1px;
-	font-family: 'Open Sans', Arial;
+	font-family: 'Open Sans', Verdana;
 	font-size: 1em;
 }
 
@@ -91,7 +91,7 @@ a:hover{
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', Verdana;
 	font-size: 1em;
 }
 
@@ -110,7 +110,7 @@ a:hover{
 	margin-right: auto;
 	float: none;
 	text-align: center;
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', Verdana;
 	font-size: 1em;
 }
 
@@ -141,7 +141,7 @@ a:hover{
 	float: left;
 	text-align: center;
 	text-decoration: none;
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', Verdana;
 	font-size: 1.5em;
 	color: #990033;
 }
@@ -154,7 +154,7 @@ a:hover{
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', Verdana;
 }
 
 .section .subsection .sub .date {
@@ -209,7 +209,7 @@ a:hover{
 	font-weight: bold;
 	text-align: center;
 	color: #990033;
-	font-family:'Open Sans';
+	font-family:'Open Sans', Verdana;
 }
 
 .footer p {
