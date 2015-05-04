@@ -10,17 +10,17 @@ body {
 
 @font-face { 
 	font-family: 'Open Sans';
-	src: url('Fonts/open-sans/OpenSans-Regular.ttf');
+	src: url('fonts/open-sans/OpenSans-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Roboto Thin';
-	src: url('Fonts/Roboto/Roboto-Thin.ttf');
+	src: url('fonts/Roboto/Roboto-Thin.ttf');
 }
 
 @font-face {
 	font-family: 'Open Sans Light';
-	src: url('Fonts/open-sans/OpenSans-Light.ttf');
+	src: url('fonts/open-sans/OpenSans-Light.ttf');
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -31,8 +31,44 @@ a:hover{
 	color: #c2c2c2;
 }
 
+.colortoggle {
+	text-align: center;
+	padding-left: 1em;
+	font-size: 1.5em;
+	padding-top: 4.5em;
+	position: fixed;
+	cursor: default;
+}
+
+#first {
+	color: #008161;
+	cursor:	pointer;
+}
+
+#second {
+	color: #470047;
+	cursor:	pointer;
+}
+
+#third {
+	color: rgb(99,00,33);
+	cursor:	pointer;
+}
+
+#fourth {
+	color: #000040;
+	cursor:	pointer;
+}
+
+#fifth {
+	color: #D68533;
+	cursor:	pointer;
+}
+
 .content {
 	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 7.25em;
 	font-size: 1em;
 }
@@ -58,13 +94,6 @@ a:hover{
 	margin-bottom: 0.75em;
 }
 
-.header .navbar a {
-	text-align: center;
-	text-decoration: none;
-	font-size: 1em;
-	color: #ececec;
-}
-
 .header .navbar img {
 	width:50px;
 	vertical-align: middle;
@@ -83,6 +112,7 @@ a:hover{
 	color: #ececec;
 	font-size: 4em;
 	margin: 0px;
+	cursor: default;
 }
 
 .section {
@@ -96,7 +126,10 @@ a:hover{
 }
 
 .section h2 {
+	width: 75%;
 	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 18px;
 	text-align: center;
 	font-family: 'Roboto Thin';
@@ -134,18 +167,6 @@ a:hover{
 	text-align: center;
 	padding-bottom: 5px;
 }
-
-.section .subsection a {
-	width: 100%;
-	margin: 5px;
-	float: left;
-	text-align: center;
-	text-decoration: none;
-	font-family: 'Open Sans', Verdana;
-	font-size: 1.5em;
-	color: #990033;
-}
-
 
 .section .subsection .sub {
 	width: 75%;
@@ -204,7 +225,6 @@ a:hover{
 .footer {
 	border-top: 1px solid #c2c2c2;
 	width: 100%;
-	background-color: #ececec;
 	font-size: 0.7em;
 	font-weight: bold;
 	text-align: center;
