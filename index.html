@@ -1,243 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">	
 <head>
-	<title>Iris Ng</title>
-	<link type="text/css" rel="stylesheet" href="main.css">
-	<link rel="icon" href="icon.ico">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="links.js"></script>
+	<title>Iris Ng - irislyng.me</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.min.js"></script>
+
+	<!-- Stylesheets -->
+	<link type="text/css" rel="stylesheet" href="css/irislyng.css">
+	<!-- <link rel="stylesheet" media="(max-width: 1260px)" href="css/max-1260px.css"> -->
+	<!-- <link rel="stylesheet" media="(max-height: 545px)" href="css/max-545pxheight.css"> -->
+	<link rel="icon" href="img/icon.ico">
+	
+	<!-- Modules -->
+	<script src="src/app.module.js"> </script>
+	<!-- Controllers -->
+	<script src="src/main.controller.js"> </script>
+	<script src="src/about.controller.js"> </script>
+	<script src="src/resume.controller.js"></script>
+	<script src="src/projects.controller.js"></script>
+	<!-- Directives -->
+	<script src="src/directives.js"> </script>
 </head>
 
-<body>
-	<div class="header">
-		<div class="info">
-			<h1>IRIS NG</h1>
-		</div>
-				
-		<p class="navbar">
-			<a href="#contact"><img src="Icons/Email.png" /></a>
-			<a href="http://ca.linkedin.com/in/irislyng" target="_blank"><img src="Icons/LinkedIn.png" /></a>
-			<a href="http://www.github.com/irislyng" target="_blank"><img src="Icons/GitHub.png" /></a>
-		</p>
+<body data-ng-controller="MainController as vm">
+
+	<div class="navbar" ng-mouseover="vm.isActive = true" ng-mouseleave="vm.isActive = false">
+		<div class="links">
+			<img class="links-menu" src="img/navbar.png"></img>
+			<a ng-repeat="link in vm.links" ng-click="vm.toggle(link)">{{link}}</a>
+		</div>	
 	</div>
-<!-- 	<div class="colortoggle">
-			<a id="first">&#9632</a>
-			<a id="second">&#9632</a>
-			<a id="third">&#9632</a>
-			<a id="fourth">&#9632</a>
-			<a id="fifth">&#9632</a>
-	</div> -->
-	<div class="content">
 
-		<div class="section" id="about">
-			<h2>About Me</h2>
-			<p> Hello there. My name is Iris Ng and I'm a third year student studying Software Engineering and Management at McMaster University.<br>
-			<br>
-			In my free time, I enjoy spending time outdoors and doing outdoor-sy activities, such as hiking, camping, etc. I also really enjoy watching TV shows and movies (I always have to be caught up with the latest ones). It's a bad habit, but I can't get enough of it!
-			</p>
+	<div class="display" ng-class="{'navbar-active': vm.isActive}">
+		<!-- Home -->
+		<div id="home" ng-if="!vm.current">
+			<h1 class="title">Iris Ng</h1>
+			<div class="links-icons">
+				<a ng-repeat="icon in vm.icons" ng-href="{{icon.link}}" target="{{icon.target}}"><img ng-src="{{icon.img}}" /></a>
+			</div>
 		</div>
 
-		<div class="section" id="resume">
-			<h2>Resume</h2> 
-
-			<div class="subsection">
-				<h3>Work Experience</h3>
-
-				<div class="sub">
-					<div class="title"><h4>Front End Developer</h4></div>
-					<div class="info">Media Classified Corporation, Vaughan, ON</div>
-					<div class="date">May 2015 - Present</div>
-					<div class="desc">
-						<ul>
-							<li>Web application development for front-end system using AngularJS, several JavaScript libraries, HTML5 and CSS3</li>
-							<li>Implement responsive modules to improve UI/UX over various electronic devices</li>
-							<li>Developed in a collaborative environment using Agile development to ensure client satisfaction through creation of user stories</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="sub">
-					<div class="title"><h4>Teaching Assistant</h4></div>
-					<div class="info">McMaster University, Hamilton, ON</div>
-					<div class="date">Jan 2015 - Apr 2015</div>
-					<div class="desc">
-						<ul>
-							<li>Supervised and marked weekly labs for Physics 1E03 - Waves, Electricity and Magnetic Fields</li>
-							<li>Demonstrated use of lab equipment such as meters and connecting circuits to students and ensured they are used in a safe manner</li>
-							<li>Guided students in performing the lab correctly and helped clear up any misunderstandings students had about concepts taught in class</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="sub">
-					<div class="title"><h4>Private Tutor</h4></div>
-					<div class="info">McMaster Engineering Society, Hamilton, ON</div>
-					<div class="date">Oct 2013 - Apr 2015</div>
-					<div class="desc">
-						<ul>
-							<li>Provided 1-on-1 private tutoring sessions for students in the Faculty of Engineering</li>
-							<li>Assisted students in improving their academic achievements by clarifying learning problems</li>
-							<li>Advised students on improving time management skills and study habits</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="sub">
-					<div class="title"><h4>Retail Customer Representative</h4></div>	
-					<div class="info">African Lion Safari, Hamilton, ON</div>
-					<div class="date">Apr 2014 - Oct 2014</div>
-					<div class="desc">
-						<ul>
-							<li>Ensured all customers' needs were met and handled several customer inquiries</li>
-							<li>Maintained a safe and clean environment at numerous gift shop locations</li>
-							<li>Trained in cashier services, using POS software, and visa/debit machines</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="sub">
-					<div class="title"><h4>Sales Associate</h4></div>	
-					<div class="info">Forever 21, Lime Ridge Mall</div>
-					<div class="date">Jul 2013 - Mar 2014</div>
-					<div class="desc">
-						<ul>
-							<li>Assisted custommers in locating products within the store and handled several transactions</li>
-							<li>Gained experience interacting with customers and working under pressure</li>
-							<li>Developed teamwork skills and cooperated with colleagues to create a safe workplace</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<div class="subsection">
-				<h3>Technical Skills</h3>
+		<!-- Resume -->
+		<div id="resume" ng-if="vm.current=='resume'" data-ng-controller="ResumeController as resume">
+			<section>
+				<div class="section-title">{{resume.titles.skills}}</div>
 				<div class="sub">
 					<table>
-						<tr><td><h4>Languages</h4></td>
-							<td class="list">Proficient with Java, HTML, CSS</td>
+						<tr><td class="label">{{resume.skills.languages}}</td>
+							<td class="list">{{resume.skills.languages_desc}}</td>
 						</tr>
 						<tr>
-							<td></td>
-							<td class="list">Familiar with C++, Javascript, jQuery, MATLAB, Python</td>
-						</tr>
-						<tr>
-							<td><h4>Others</h4></td>
-							<td class="list">Git, JUnit, Eclipse, UML, Windows, Android</td>
+							<td class="label">{{resume.skills.others}}</td>
+							<td class="list">{{resume.skills.others_desc}}</td>
 						</tr>
 					</table>
 				</div>		
-			</div>
+			</section>
 
-			<div class="subsection">
-				<h3>Projects</h3>
-
+			<div class="section-title">{{resume.titles.work}}</div>
+			<section data-ng-repeat="job in resume.jobs">
 				<div class="sub">
-					<div class="title"><h4>Personal Website</h4></div>
-					<div class="info">http://irislyng.me</div>
-					<div class="date">Dec 2014 - Present</div>
+					<div class="title">{{job.title}}</div>
+					<div class="location">{{job.location}}</div>
+					<div class="date">{{job.date}}</div>
 					<div class="desc">
 						<ul>
-							<li>Developed and managed personal website using HTML/CSS</li>
-							<li>Currently learning Javascript and other front-end development</li>
+							<li data-ng-repeat="item in job.description">{{item}}</li>
 						</ul>
 					</div>
 				</div>
+			</section>
 
+			<div class="section-title">{{resume.titles.education}}</div>
+			<section>
 				<div class="sub">
-					<div class="title"><h4>CabPool Android Application</h4></div>
-					<div class="info">McMaster University, Hamilton, ON</div>
-					<div class="date">Sept 2014 - Dec 2014</div>
+					<div class="title">{{resume.education.title}}</div>
+					<div class="location">{{resume.education.location}}</div>
+					<div class="date">{{resume.education.date}}</div>
 					<div class="desc">
 						<ul>
-							<li>Developed an Android application in a group of 5 which allows users to minimize the costs of taking a cab by sharing their cab fare</li>
-							<li>Designed the UI of the application using XML </li>
-							<li>Developed in Java using Parse.com as a back-end server to host the data and store user information</li>
+							<li data-ng-repeat="item in resume.education.description">{{item}}</li>
 						</ul>
 					</div>
 				</div>
+			</section>
 
+			<div class="section-title">{{resume.titles.awards}}</div>
+			<section data-ng-repeat="award in resume.awards">
 				<div class="sub">
-					<div class="title"><h4>Checkers Game</h4></div>
-					<div class="info">McMaster University, Hamilton, ON</div>
-					<div class="date">Jan 2014 - Apr 2014</div>
+					<div class="title">{{award.title}}</div>
+					<div class="location">{{award.location}}</div>
+					<div class="date">{{award.date}}</div>
 					<div class="desc">
 						<ul>
-							<li>Implemented fully functional checkers game in a group of 5 that gives users the option to play against other players or the computer</li>
-							<li>Gained experience in Java, Java Swing and GUI development of computer applications</li>
-							<li>Developed ability to write test cases using JUnit that covered all possible outcomes of the game</li>
+							<li data-ng-repeat="item in award.description">{{item}}</li>
 						</ul>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="subsection">
-				<h3>Education</h3>
-
+			<section>
 				<div class="sub">
-					<div class="title"><h4>Bachelor of Software Engineering and Management</h4></div>
-					<div class="info">McMaster University, Hamilton, ON</div>
-					<div class="date">Class of 2017</div>
+					<div class="title">Extracurricular Activites</div>
 					<div class="desc">
 						<ul>
-							<li>Currently completeing level three of a five-year Software Engineering and Management program which combines the technical and business aspects of Engineering</li>
-							<li>Received the Motorola Software Engineering Scholarship and Enbridge Higher Education Award</li>
-							<li><b>Related Courses</b>: Software Design, Data Structures and Algorithms, Computer Architecture, Software Requirements and Security Considerations, Scientific Computation </li>
-							<li><b>Current GPA: 3.83</b></li>
+							<li data-ng-repeat="ach in resume.achievements"><b>{{ach.club}}</b>, {{ach.position}}</li>
 						</ul>
 					</div>
 				</div>
-			</div>
+			</section>
+		</div>
 
-			<div class="subsection">
-				<h3>Awards/Achievements</h3>
-
+		<!-- Projects -->
+		<div id="projects" ng-if="vm.current=='projects'" data-ng-controller="ProjectsController as projects">
+			<section data-ng-repeat="section in projects.projects">
+				<div class="section-title">{{section.title}}</div>
 				<div class="sub">
-					<div class="title"><h4>Duke of Edinburgh Award - Gold Level</h4></div>
-					<div class="info">Vision Youth Leadership Program</div>
-					<div class="date">April 2012</div>
+					<div class="location">{{section.location}}</div>
+					<div class="date">{{section.date}}</div>
 					<div class="desc">
 						<ul>
-							<li>Received the DEA Gold Level Award from The Right Honourable David Johnston</li>
-							<li>Gained leadership skills from group-oriented activities and developmental programs</li>
+							<li data-ng-repeat="item in section.description">{{item}}</li>
 						</ul>
 					</div>
 				</div>
+			</section>
+		</div>
 
-				<div class="sub">
-					<div class="title"><h4>Motorola Software Engineering Scholarship</h4></div>
-					<div class="info">Motorola Foundation</div>
-					<div class="date">September 2014</div>
-					<div class="desc">
-						<ul>
-							<li>Awarded to two students entering Level III in a Software Engineering program who, in the judgment of the Department of Computing and Software, have achieved notable academic standing, displayed strong communication skills, demonstrated leadership and involvement in extra-curricular activities</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="sub">
-					<div class="title"><h4>Extracurricular Activities</h4></div>
-					<div class="info">
-						<ul>
-							<li><b>McMaster Engineering Society</b>, Computing and Software Representative</li>
-							<li><b>Software Engineering Club</b>, MES Representative</li>
-						</ul>
-					</div>
-				</div>
+		<!-- About -->
+		<div id="about" ng-if="vm.current=='about'" data-ng-controller="AboutController as about">
+			<div class="section-title">{{about.about.title}}</div>
+			<img ng-src="{{about.img}}"></img>
+			<div data-ng-repeat="item in about.about.content">
+				<p>{{item}}</p>
 			</div>
 		</div>
 
-		<div class="section" id="contact">
-			<h2>Contact Me</h2>
-			<p>
-			Email: irisl</>yng@gmail.com<br>
-			Phone: (289) 776-9882
-			</p>
+		<!-- Contact -->
+		<div id="contact" ng-if="vm.current=='contact'">
+			<div class="section-title">{{vm.contact.title}}</div>
+				<table>
+					<tr>
+						<td class="label">Email:</td>
+						<td class="details">{{vm.contact.gmail.one}}<span class="hide">null</span>{{vm.contact.gmail.two}}<span class="hide">null</span>{{vm.contact.gmail.three}}<span class="hide">null</span>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="details">{{vm.contact.mcmaster.one}}<span class="hide">null</span>{{vm.contact.mcmaster.two}}<span class="hide">null</span>{{vm.contact.mcmaster.three}}</td>
+					</tr>
+					<tr>
+						<td class="label">Phone:</td>
+						<td class="details">{{vm.contact.phone.one}}<span class="hide">null</span>{{vm.contact.phone.two}}<span class="hide">null</span>{{vm.contact.phone.three}}</td>
+					</tr>
+				</table>
 		</div>
+
 	</div>
 
 
-	<div class="footer">
-		<p>irislyng.me &#149; Designed by Iris Ng</p>
-	</div>
 </body>
 </html>
