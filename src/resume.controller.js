@@ -22,9 +22,9 @@
 					location: 'Media Classified Corporation, Vaughan ON',
 					date: 'May 2015 - Present',
 					description: [
-						'Developed front-end of web application using AngularJS and several JavaScript libraries',
-						'Contributed to layout and design of numerous pages',
-						'Implemented routes and handlers to make requests to the API using Mongoose'
+						'Web application development for front-end system using AngularJS, several JavaScript libraries, HTML5 and CSS3',
+						'Implement responsive modules to improve UI/UX over various electronic devices',
+						'Developed in a collaborative environment using Agile programming to ensure customer and client satisfaction through creation of user stories'
 					]
 				},
 				{
@@ -73,8 +73,8 @@
 			/* Skills */
 
 			vm.skills = {
-				languages: "Languages",
-				languages_desc: "Java, AngularJS, HTML, CSS, C++, Javascript, jQuery, MATLAB, Python",
+				tools: "Tools",
+				tools_desc: "Java, AngularJS, HTML, CSS, C++, Javascript, jQuery, MATLAB, Python",
 				others:  "Others",
 				others_desc: "Git, JUnit, Eclipse, UML, Windows, Android"
 			};
