@@ -1,5 +1,9 @@
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500|Pacifico);
+
 body {	
-	font-family: 'Roboto Light', Helvetica;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	background-color: white;
 	cursor: default;
 	width: 100%;
@@ -13,28 +17,6 @@ body {
     display: none; 
 }
 
-/* FONTS */
-
-@font-face { 
-	font-family: 'Pacifico';
-	src: url('../fonts/pacifico/Pacifico.ttf');
-}
-
-@font-face { 
-	font-family: 'Roboto Light';
-	src: url('../fonts/roboto/Roboto-Light.ttf');
-}
-
-@font-face { 
-	font-family: 'Roboto Thin';
-	src: url('../fonts/roboto/Roboto-Thin.ttf');
-}
-
-@font-face { 
-	font-family: 'Roboto';
-	src: url('../fonts/roboto/Roboto-Regular.ttf');
-}
-
 /* GENERAL */
 
 .hide { 
@@ -42,7 +24,7 @@ body {
 }
 
 h1 {
-	font-family: 'Pacifico';
+	font-family: 'Pacifico', cursive;
 	text-align: center;
 	font-size: 3.5em;
 	text-transform: lowercase;
@@ -88,15 +70,6 @@ h1 {
 	left: 0px;
 }
 
-.navbar h1 { 
-	font-size: 3.3em;
-/*	letter-spacing: 0.1em;
-	font-family: 'Montserrat';*/
-	font-family: 'Roboto Thin';
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-}
-
 .navbar .links {
 	margin-top: 80%;
 	background-color: white;
@@ -116,7 +89,8 @@ h1 {
 .navbar .links a {
 	position: relative;
 	cursor: pointer;
-	font-family: 'Roboto Light';
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	color: black;
 	font-size: 1.7em;
 	letter-spacing: 0.1em;
@@ -238,9 +212,10 @@ h1 {
 }
 
 .display .sub .title {
-	font-size: 1.3em;
-	margin-bottom: 0.1em;
 	font-family: 'Roboto', sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	margin-bottom: 0.1em;
 }
 
 .display .sub .location {
@@ -265,7 +240,7 @@ h1 {
 }
 
 .display .sub .label {
-	font-weight: bold;
+	font-weight: 500;
 }
 
 .display .sub .list {
@@ -294,7 +269,7 @@ h1 {
 }
 
 .display #contact .label {
-	font-weight: bold;
+	font-weight: 400;
 	letter-spacing: 0.1em;
 	text-transform: lowercase;
 }
