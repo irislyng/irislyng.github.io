@@ -12,7 +12,7 @@
 
 			vm.isActive = false;
 			vm.current = null;
-			vm.toggle = toggle;
+			vm.select = select;
 
 			vm.icons = [
 				{
@@ -59,7 +59,8 @@
 				}
 			}
 
-			function toggle (link) {
+			function select (link) {
+				vm.isActive = false;
 				if(link == 'home')
 					vm.current = null;
 				else

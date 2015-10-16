@@ -27,14 +27,14 @@
 
 <body data-ng-controller="MainController as vm">
 
-	<div class="navbar" ng-mouseover="vm.isActive = true" ng-mouseleave="vm.isActive = false">
+	<div class="navbar" ng-class="{'navbar-active': vm.isActive}">
 		<div class="links">
-			<img class="links-menu" src="img/navbar.png"></img>
-			<a ng-repeat="link in vm.links" ng-click="vm.toggle(link)">{{link}}</a>
+			<img class="links-menu" src="img/navbar.png" ng-click="vm.isActive=!vm.isActive"></img>
+			<a ng-repeat="link in vm.links" ng-click="vm.select(link)">{{link}}</a>
 		</div>	
 	</div>
 
-	<div class="display" ng-class="{'navbar-active': vm.isActive}">
+	<div class="display" ng-class="{'display-active': vm.isActive}">
 		<!-- Home -->
 		<div id="home" ng-if="!vm.current">
 			<h1 class="title">Iris Ng</h1>

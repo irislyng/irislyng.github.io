@@ -65,7 +65,7 @@ h1 {
     transition: all 0.7s ease-in-out;
 }
 
-.navbar:hover {
+.navbar-active {
     box-shadow: 0 0 5px 4px rgba(0,0,0,0.15);
 	left: 0px;
 }
@@ -124,9 +124,6 @@ h1 {
   transform: scaleX(1);
 }
 
-.navbar-active {
-	left: 200px !important;
-}
 
 /* INFORMATION */
 
@@ -140,6 +137,10 @@ h1 {
 	overflow: auto;
 	-webkit-transition: all 0.7s ease-in-out 0s;
     transition: all 0.7s ease-in-out 0s;
+}
+
+.display-active {
+	left: 200px !important;
 }
 
 /* HOME */
