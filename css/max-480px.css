@@ -11,6 +11,10 @@
 	margin-top: 85px;
 }
 
+.display #home .home-container {
+	display: flex;
+}
+
 .display #about img {
 	display: none;
 }
