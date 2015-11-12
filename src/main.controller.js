@@ -32,7 +32,7 @@
 				}
 			];
 
-			vm.links = ['home', 'about', 'resume', 'projects', 'contact'];
+			vm.links = ['home', 'about', 'resume', 'projects'];
 
 			vm.images = {
 				email: 'img/email.png' ,

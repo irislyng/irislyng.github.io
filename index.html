@@ -10,8 +10,9 @@
 
 	<!-- Stylesheets -->
 	<link type="text/css" rel="stylesheet" href="css/irislyng.css">
-	<!-- <link rel="stylesheet" media="(max-width: 1260px)" href="css/max-1260px.css"> -->
-	<!-- <link rel="stylesheet" media="(max-height: 545px)" href="css/max-545pxheight.css"> -->
+	<!-- Media Queries -->
+	<link rel="stylesheet" media="(max-width: 570px)" href="css/max-570px.css">
+	<link rel="stylesheet" media="(max-width: 480px)" href="css/max-480px.css">
 	<link rel="icon" href="img/icon.ico">
 	
 	<!-- Modules -->
@@ -21,25 +22,32 @@
 	<script src="src/about.controller.js"> </script>
 	<script src="src/resume.controller.js"></script>
 	<script src="src/projects.controller.js"></script>
-	<!-- Directives -->
-	<script src="src/directives.js"> </script>
 </head>
 
 <body data-ng-controller="MainController as vm">
 
-	<div class="navbar" ng-class="{'navbar-active': vm.isActive}">
+	<div class="navbar">
 		<div class="links">
-			<img class="links-menu" src="img/navbar.png" ng-click="vm.isActive=!vm.isActive"></img>
 			<a ng-repeat="link in vm.links" ng-click="vm.select(link)">{{link}}</a>
 		</div>	
 	</div>
 
-	<div class="display" ng-class="{'display-active': vm.isActive}">
+	<div class="display">
 		<!-- Home -->
 		<div id="home" ng-if="!vm.current">
-			<h1 class="title">Iris Ng</h1>
-			<div class="links-icons">
-				<a ng-repeat="icon in vm.icons" ng-href="{{icon.link}}" target="{{icon.target}}"><img ng-src="{{icon.img}}" /></a>
+			<!-- <h1 class="title">Iris Ng</h1> -->
+			<div class="home-container">
+				<div class="home-title">
+					Iris Ng
+					<div class="links-icons">
+						<a ng-repeat="icon in vm.icons" ng-href="{{icon.link}}" target="{{icon.target}}"><img ng-src="{{icon.img}}" /></a>
+					</div>
+				</div>
+				<div class="home-contact">
+					{{vm.contact.gmail.one}}<span class="hide">null</span>{{vm.contact.gmail.two}}<span class="hide">null</span>{{vm.contact.gmail.three}}<span class="hide">null</span><br>
+					{{vm.contact.mcmaster.one}}<span class="hide">null</span>{{vm.contact.mcmaster.two}}<span class="hide">null</span><br>
+					{{vm.contact.phone.one}}<span class="hide">null</span>{{vm.contact.phone.two}}<span class="hide">null</span>{{vm.contact.phone.three}}<br>
+				</div>
 			</div>
 		</div>
 

@@ -21,7 +21,7 @@
 			},
 			{
 				title: 'CabPool Android Application',
-				location: 'McMaster Unversity, Hamilton ON',
+				location: 'McMaster University, Hamilton ON',
 				date: 'Sept 2014 - Dec 2014',
 				description: [
 					'Created an Android application which allows users to minimize the costs of taking a cab by sharing their cab fare',
@@ -32,7 +32,7 @@
 			},
 			{
 				title: 'Checkers Game',
-				location: 'McMaster Unversity, Hamilton ON',
+				location: 'McMaster University, Hamilton ON',
 				date: 'Jan 2014 - Apr 2014',
 				description: [
 					'Implemented fully functional checkers game in a group of 5 that gives users the option to play against other players or the computer',
