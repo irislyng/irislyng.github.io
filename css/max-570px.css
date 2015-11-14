@@ -1,3 +1,15 @@
 .navbar .links a {
 	margin: 0.2em 0.5em;
 }
+
+.display .sub {
+	margin: 0em;
+	padding: 0.8em;
+}
+
+.display .sub .date {
+	float: left;
+	clear: both;
+	font-size: 0.85em;
+	font-style: italic;
+}

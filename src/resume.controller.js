@@ -22,7 +22,7 @@
 					location: 'Media Classified Corporation, Vaughan ON',
 					date: 'May 2015 - Present',
 					description: [
-						'Web application development for front-end system using AngularJS, several JavaScript libraries, HTML5 and CSS3',
+						'Web application development for front-end system using AngularJS, several JavaScript libraries, HTML5 and CSS3 using test-driven development',
 						'Implement responsive modules to improve UI/UX over various electronic devices',
 						'Developed in a collaborative environment using Agile programming to ensure customer and client satisfaction through creation of user stories'
 					]
@@ -73,10 +73,10 @@
 			/* Skills */
 
 			vm.skills = {
-				tools: "Tools",
-				tools_desc: "Java, AngularJS, HTML, CSS, C++, Javascript, jQuery, MATLAB, Python",
-				others:  "Others",
-				others_desc: "Git, JUnit, Eclipse, UML, Windows, Android"
+				tools: "Languages/Frameworks",
+				tools_desc: "Java, AngularJS, HTML5, CSS3, C++, Javascript, jQuery, MATLAB, Python",
+				others:  "Tools",
+				others_desc: "Git, Sass, JUnit, Eclipse, Unix, Windows, Android"
 			};
 
 			vm.education = {
@@ -105,7 +105,7 @@
 					date: "April 2012",
 					description: [
 					"Received the DEA Gold Level Award from The Right Honourable David Johnston",
-					"Gained leadership skills from group-oriented activities and developmental programs such as Toastmasters"
+					"Gained leadership and teamwork skills through group-oriented activities and developmental programs such as Toastmasters"
 					]
 				}
 			];

@@ -15,7 +15,7 @@
 				location: 'http://irislyng.me',
 				date: 'Dec 2014 - Present',
 				description: [
-					'Developed and managed personal website using AngularJS, jQuery and HTML/CSS',
+					'Developed and managed personal website using AngularJS, HTML5 and CSS3',
 					'Currently working to implement a dynamic website to showcase other projects'
 				]
 			},
