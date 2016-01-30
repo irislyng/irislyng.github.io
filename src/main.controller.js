@@ -34,12 +34,6 @@
 
 			vm.links = ['home', 'about', 'resume', 'projects'];
 
-			vm.images = {
-				email: 'img/email.png' ,
-				linkedin: 'img/linkedin.png',
-				github: 'img/github.png'
-			};
-
 			vm.contact = {
 				title: 'Contact Me',
 				gmail: {

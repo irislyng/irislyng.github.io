@@ -24,7 +24,8 @@
 					description: [
 						'Web application development for front-end system using AngularJS, several JavaScript libraries, HTML5 and CSS3 using test-driven development',
 						'Implement responsive modules to improve UI/UX over various electronic devices',
-						'Developed in a collaborative environment using Agile programming to ensure customer and client satisfaction through creation of user stories'
+						'Developed in a collaborative environment using Agile programming to ensure customer and client satisfaction through creation of user stories',
+						'Integration of existing CMS to application using RESTful APIs'
 					]
 				},
 				{
@@ -56,7 +57,7 @@
 						'Maintained a safe and clean environment at numerous gift shop locations',
 						'Trained in cashier services, using POS software, and visa/debit machines'
 					]
-				},
+				}
 				// {
 				// 	title: 'Sales Associate',
 				// 	location: 'Forever 21, Lime Ridge Mall, Hamilton ON',
@@ -74,7 +75,7 @@
 
 			vm.skills = {
 				tools: "Languages/Frameworks",
-				tools_desc: "Java, AngularJS, HTML5, CSS3, C++, Javascript, jQuery, MATLAB, Python",
+				tools_desc: "Java, AngularJS, HTML5, CSS3, JavaScript, jQuery, MATLAB, Python, C",
 				others:  "Tools",
 				others_desc: "Git, Sass, JUnit, Eclipse, Unix, Windows, Android"
 			};
@@ -86,7 +87,7 @@
 				description: [
 				"Currently completing level four of a five-year Software Engineering and Management program which combines the technical and business aspects of Engineering", 
 				"Received the Motorola Software Engineering Scholarship and Enbridge Higher Education Award", 
-				"Relevant Courses: Software Design, Data Structures and Algorithms, Computer Architecture, Software Requirements and Security Considerations, Scientific Computation"
+				"Relevant Courses: Software Design, Data Structures and Algorithms, Computer Architecture, Software Requirements and Security Considerations, Scientific Computation, Large System Design"
 				]
 			};
 
