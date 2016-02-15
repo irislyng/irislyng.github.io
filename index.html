@@ -7,6 +7,7 @@
 	<!-- Libraries -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
 
 	<!-- Stylesheets -->
 	<link type="text/css" rel="stylesheet" href="css/irislyng.css">
@@ -16,158 +17,25 @@
 	<link rel="icon" href="img/icon.ico">
 	
 	<!-- Modules -->
-	<script src="src/app.module.js"> </script>
+	<script src="js/app.module.js"> </script>
 	<!-- Controllers -->
-	<script src="src/main.controller.js"> </script>
-	<script src="src/about.controller.js"> </script>
-	<script src="src/resume.controller.js"></script>
-	<script src="src/projects.controller.js"></script>
+	<script src="js/main.controller.js"> </script>
+	<script src="js/about.controller.js"> </script>
+	<script src="js/resume.controller.js"></script>
+	<script src="js/projects.controller.js"></script>
+	<script src="js/data.service.js"></script>
+	<script src="js/routes.js"></script>
 </head>
 
-<body data-ng-controller="MainController as vm">
+<body data-ng-controller="MainController as main">
 
 	<div class="navbar">
 		<div class="links">
-			<a ng-repeat="link in vm.links" ng-click="vm.select(link)">{{link}}</a>
+			<a ng-repeat="link in main.links" ui-sref="{{link}}">{{link}}</a>
 		</div>	
 	</div>
 
-	<div class="display">
-		<!-- Home -->
-		<div id="home" ng-if="!vm.current">
-			<!-- <h1 class="title">Iris Ng</h1> -->
-			<div class="home-container">
-				<div class="home-title">
-					Iris Ng
-					<div class="links-icons">
-						<a ng-repeat="icon in vm.icons" ng-href="{{icon.link}}" target="{{icon.target}}"><img ng-src="{{icon.img}}" /></a>
-					</div>
-				</div>
-				<div class="home-contact">
-					{{vm.contact.gmail.one}}<span class="hide">null</span>{{vm.contact.gmail.two}}<span class="hide">null</span>{{vm.contact.gmail.three}}<span class="hide">null</span><br>
-					{{vm.contact.mcmaster.one}}<span class="hide">null</span>{{vm.contact.mcmaster.two}}<span class="hide">null</span>{{vm.contact.mcmaster.three}}<br>
-					{{vm.contact.phone.one}}<span class="hide">null</span>{{vm.contact.phone.two}}<span class="hide">null</span>{{vm.contact.phone.three}}<br>
-				</div>
-			</div>
-		</div>
-
-		<!-- Resume -->
-		<div id="resume" ng-if="vm.current=='resume'" data-ng-controller="ResumeController as resume">
-			<section>
-				<div class="section-title">{{resume.titles.skills}}</div>
-				<div class="sub">
-					<table>
-						<tr><td class="label">{{resume.skills.tools}}</td>
-							<td class="list">{{resume.skills.tools_desc}}</td>
-						</tr>
-						<tr>
-							<td class="label">{{resume.skills.others}}</td>
-							<td class="list">{{resume.skills.others_desc}}</td>
-						</tr>
-					</table>
-				</div>		
-			</section>
-
-			<div class="section-title">{{resume.titles.work}}</div>
-			<section data-ng-repeat="job in resume.jobs">
-				<div class="sub">
-					<div class="title">{{job.title}}</div>
-					<div class="location">{{job.location}}</div>
-					<div class="date">{{job.date}}</div>
-					<div class="desc">
-						<ul>
-							<li data-ng-repeat="item in job.description">{{item}}</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<div class="section-title">{{resume.titles.education}}</div>
-			<section>
-				<div class="sub">
-					<div class="title">{{resume.education.title}}</div>
-					<div class="location">{{resume.education.location}}</div>
-					<div class="date">{{resume.education.date}}</div>
-					<div class="desc">
-						<ul>
-							<li data-ng-repeat="item in resume.education.description">{{item}}</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<div class="section-title">{{resume.titles.awards}}</div>
-			<section data-ng-repeat="award in resume.awards">
-				<div class="sub">
-					<div class="title">{{award.title}}</div>
-					<div class="location">{{award.location}}</div>
-					<div class="date">{{award.date}}</div>
-					<div class="desc">
-						<ul>
-							<li data-ng-repeat="item in award.description">{{item}}</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<div class="sub">
-					<div class="title">Extracurricular Activites</div>
-					<div class="desc">
-						<ul>
-							<li data-ng-repeat="ach in resume.achievements"><em>{{ach.club}}</em>, {{ach.position}}</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-		</div>
-
-		<!-- Projects -->
-		<div id="projects" ng-if="vm.current=='projects'" data-ng-controller="ProjectsController as projects">
-			<section data-ng-repeat="section in projects.projects">
-				<div class="section-title">{{section.title}}</div>
-				<div class="sub">
-					<div class="location">{{section.location}}</div>
-					<div class="date">{{section.date}}</div>
-					<div class="desc">
-						<ul>
-							<li data-ng-repeat="item in section.description">{{item}}</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-		</div>
-
-		<!-- About -->
-		<div id="about" ng-if="vm.current=='about'" data-ng-controller="AboutController as about">
-			<div class="section-title">{{about.about.title}}</div>
-			<img ng-src="{{about.img}}"></img>
-			<div data-ng-repeat="item in about.about.content">
-				<p>{{item}}</p>
-			</div>
-		</div>
-
-		<!-- Contact -->
-		<div id="contact" ng-if="vm.current=='contact'">
-			<div class="section-title">{{vm.contact.title}}</div>
-				<table>
-					<tr>
-						<td class="label">Email:</td>
-						<td class="details">{{vm.contact.gmail.one}}<span class="hide">null</span>{{vm.contact.gmail.two}}<span class="hide">null</span>{{vm.contact.gmail.three}}<span class="hide">null</span>
-						</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td class="details">{{vm.contact.mcmaster.one}}<span class="hide">null</span>{{vm.contact.mcmaster.two}}<span class="hide">null</span>{{vm.contact.mcmaster.three}}</td>
-					</tr>
-					<tr>
-						<td class="label">Phone:</td>
-						<td class="details">{{vm.contact.phone.one}}<span class="hide">null</span>{{vm.contact.phone.two}}<span class="hide">null</span>{{vm.contact.phone.three}}</td>
-					</tr>
-				</table>
-		</div>
-
-	</div>
+	<div class="display" ui-view></div>
 
 
 </body>

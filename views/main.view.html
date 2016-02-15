@@ -1,0 +1,15 @@
+<!-- Home -->
+<!-- <h1 class="title">Iris Ng</h1> -->
+<div id="home" class="home-container">
+	<div class="home-title">
+		Iris Ng
+		<div class="links-icons">
+			<a ng-repeat="icon in vm.icons" ng-href="{{icon.link}}" target="{{icon.target}}"><img ng-src="{{icon.img}}" /></a>
+		</div>
+	</div>
+	<div class="home-contact">
+		{{vm.contact.gmail.one}}<span class="hide">null</span>{{vm.contact.gmail.two}}<span class="hide">null</span>{{vm.contact.gmail.three}}<span class="hide">null</span><br>
+		{{vm.contact.mcmaster.one}}<span class="hide">null</span>{{vm.contact.mcmaster.two}}<span class="hide">null</span>{{vm.contact.mcmaster.three}}<br>
+		{{vm.contact.phone.one}}<span class="hide">null</span>{{vm.contact.phone.two}}<span class="hide">null</span>{{vm.contact.phone.three}}<br>
+	</div>
+</div>

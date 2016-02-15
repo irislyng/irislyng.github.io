@@ -1,0 +1,8 @@
+<!-- About -->
+<div id="about">
+	<div class="section-title">{{vm.about.title}}</div>
+	<img ng-src="{{vm.img}}"></img>
+	<div data-ng-repeat="item in vm.about.content">
+		<p>{{item}}</p>
+	</div>
+</div>

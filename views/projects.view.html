@@ -1,0 +1,15 @@
+<!-- Projects -->
+<div id="projects">
+	<section data-ng-repeat="section in vm.projects">
+		<div class="section-title">{{section.title}}</div>
+		<div class="sub">
+			<div class="location">{{section.location}}</div>
+			<div class="date">{{section.date}}</div>
+			<div class="desc">
+				<ul>
+					<li data-ng-repeat="item in section.description">{{item}}</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</div>

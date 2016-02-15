@@ -1,0 +1,70 @@
+<!-- Resume -->
+<div id="resume">
+	<section>
+		<div class="section-title">{{vm.titles.skills}}</div>
+		<div class="sub">
+			<table>
+				<tr><td class="label">{{vm.skills.tools}}</td>
+					<td class="list">{{vm.skills.tools_desc}}</td>
+				</tr>
+				<tr>
+					<td class="label">{{vm.skills.others}}</td>
+					<td class="list">{{vm.skills.others_desc}}</td>
+				</tr>
+			</table>
+		</div>		
+	</section>
+
+	<div class="section-title">{{vm.titles.work}}</div>
+	<section data-ng-repeat="job in vm.jobs">
+		<div class="sub">
+			<div class="title">{{job.title}}</div>
+			<div class="location">{{job.location}}</div>
+			<div class="date">{{job.date}}</div>
+			<div class="desc">
+				<ul>
+					<li data-ng-repeat="item in job.description">{{item}}</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<div class="section-title">{{vm.titles.education}}</div>
+	<section>
+		<div class="sub">
+			<div class="title">{{vm.education.title}}</div>
+			<div class="location">{{vm.education.location}}</div>
+			<div class="date">{{vm.education.date}}</div>
+			<div class="desc">
+				<ul>
+					<li data-ng-repeat="item in vm.education.description">{{item}}</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<div class="section-title">{{vm.titles.awards}}</div>
+	<section data-ng-repeat="award in vm.awards">
+		<div class="sub">
+			<div class="title">{{award.title}}</div>
+			<div class="location">{{award.location}}</div>
+			<div class="date">{{award.date}}</div>
+			<div class="desc">
+				<ul>
+					<li data-ng-repeat="item in award.description">{{item}}</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="sub">
+			<div class="title">Extracurricular Activites</div>
+			<div class="desc">
+				<ul>
+					<li data-ng-repeat="ach in vm.achievements"><em>{{ach.club}}</em>, {{ach.position}}</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</div>
