@@ -4,7 +4,7 @@
 		.module('app')
 		.config(Routing);
 
-		function Routing($stateProvider, $urlRouterProvider) {
+		function Routing($stateProvider, $urlRouterProvider, $locationProvider) {
 			
 			$urlRouterProvider.otherwise('/');
 
@@ -39,5 +39,7 @@
 					controller: 'MainController',
 					controllerAs: 'vm'
 				})
+
+			$locationProvider.html5Mode(true);
 		}
 })();
