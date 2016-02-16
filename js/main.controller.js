@@ -43,7 +43,7 @@
 						header.style.opacity = +header.style.opacity + 0.01;
 
 						if (+header.style.opacity < 0.9) {
-							(window.requestAnimationFrame && requestAnimationFrame(fadeIn)) || setTimeout(fadeIn, 16)
+							(window.requestAnimationFrame && requestAnimationFrame(fadeIn)) || setTimeout(fadeIn, 1)
 						}
 					};
 
