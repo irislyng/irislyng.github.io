@@ -1,8 +1,13 @@
 <!-- About -->
 <div id="about">
-	<div class="section-title">{{vm.about.title}}</div>
-	<img ng-src="{{vm.img}}"></img>
-	<div data-ng-repeat="item in vm.about.content">
-		<p>{{item}}</p>
-	</div>
+	<section class="section">
+		<div class="sub">
+			<div class="left">
+				<div id="about-title" class="section-title">{{vm.about.title}}</div>
+			</div>
+			<div class="right">
+				<p data-ng-repeat="item in vm.about.content">{{item}}</p>
+			</div>
+		</div>
+	</section>
 </div>

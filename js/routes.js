@@ -11,7 +11,7 @@
 			$stateProvider
 				.state('home', {
 					url: '/',
-					templateUrl:'/views/main.view.html',
+					templateUrl: '/views/main.view.html',
 					controller: 'MainController',
 					controllerAs: 'vm'
 				})
@@ -38,8 +38,7 @@
 					templateUrl: '/views/contact.view.html',
 					controller: 'MainController',
 					controllerAs: 'vm'
-				})
+				});
 
-			$locationProvider.html5Mode(true);
 		}
 })();

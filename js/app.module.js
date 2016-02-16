@@ -4,4 +4,5 @@
 			'ngAnimate',
 			'ui.router'
 		]);
+
 })();

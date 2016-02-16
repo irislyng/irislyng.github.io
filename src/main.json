@@ -1,47 +1,42 @@
 {
-	"icons": [
+	"links": [
 		{
-			"link": "mailto: irislyng@gmail.com",
-			"img": "img/email.png",
-			"target": "_self"
-		},
-		{
+			"name": "GitHub",
 			"link": "http://github.com/irislyng",
 			"img": "img/github.png",
 			"target": "_blank"
 		},
 		{
+			"name": "LinkedIn",
 			"link": "http://ca.linkedin.com/in/irislyng",
 			"img": "img/linkedin.png",
 			"target": "_blank"
 		}
 	],
 
-	"contacts": {
-		"title": "Contact Me",
-		"gmail": {
-			"one": "irislyng",
-			"two": "@gmail",
-			"three": ".com"
+	"contacts": [
+		{
+			"type": "email",
+			"select": "mailto:",
+			"info": "irislyng@gmail.com"
 		},
-		"mcmaster": {
-			"one": "ngil",
-			"two": "@mcmaster",
-			"three": ".ca"
+		{
+			"type": "email",
+			"select": "mailto:",
+			"info": "ngil@mcmaster.ca"
 		},
-		"phone":  {
-			"one": "(289)",
-			"two": " 776",
-			"three": "-9882"
+		{
+			"type": "phone",
+			"select": "tel:",
+			"info": "289-776-9882"
 		}
-	},
+	],
 
 	"about" : {
 		"title": "About Me",
 		"content": [
 			"My name is Iris Ng, and I'd like to welcome you to my website! I'm a student currently in my 4th year of Software Engineering and Management at McMaster University. Software Engineering and Management is a 5 year program in which I am given the opportunity to take several core Commerce courses to understand the business and managerial aspect of engineering.",
-			"Currently, I'm learning more about back-end systems in web applications so I have knowledge on the full spectrum of web development. Because I'm proficient with AngularJS, I'm reading up on the MEAN stack to expand my skills so that I can become a full-stack engineer.",
-			"In my free time, besides reading up on web and application development, I enjoy spending time outdoors and participating in outdoor activities, such as hiking, camping, etc. I also really enjoy watching TV shows and movies. It's a bad habit, but I can't get enough of it!"
+			"Currently, I'm learning more about back-end systems in web applications so I have knowledge on the full spectrum of web development. Because I'm proficient with AngularJS, I'm reading up on the MEAN stack to expand my skills so that I can become a full-stack engineer."
 		]
   	}
 	

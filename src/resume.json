@@ -1,6 +1,6 @@
 {
 	"skills": {
-		"tools": "Languages/Frameworks",
+		"tools": "Languages",
 		"tools_desc": "Java, AngularJS, HTML5, CSS3, JavaScript, jQuery, MATLAB, Python, C",
 		"others":  "Tools",
 		"others_desc": "Git, Sass, JUnit, Eclipse, Unix, Windows, Android"

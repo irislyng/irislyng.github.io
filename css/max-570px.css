@@ -1,15 +1,32 @@
-.navbar .links a {
-	margin: 0.2em 0.5em;
+.navigation .navigation-links a {
+	margin: 0.2em 0em;
 }
 
-.display .sub {
-	margin: 0em;
-	padding: 0.8em;
+#about .sub .left,
+#about .sub .right {
+	display: block;
+	width: auto;
 }
 
-.display .sub .date {
-	float: left;
-	clear: both;
-	font-size: 0.85em;
-	font-style: italic;
+#resume .sub .left,
+#resume .sub .right,
+#projects .sub .left,
+#projects .sub .right {
+	display: block;
+	width: auto;
+}
+
+#resume .sub .left,
+#projects .sub .left {
+	font-size: 0.65em;
+	text-align: left;
+	color: #3E3E3E;
+}
+
+#projects .sub {
+	margin: 1.5em 0em;
+}
+
+#projects .sub .section-title {
+	margin: 0.2em 0em;
 }

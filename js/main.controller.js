@@ -7,27 +7,50 @@
 		.controller('MainController', MainController);
 
 
-		function MainController(dataService) {
+		function MainController($rootScope, dataService, $location, $timeout, $state) {
 			var vm = this;
+			vm.animate = animate;
+			vm.nav = ['home', 'about', 'resume', 'projects', 'contact'];
 
-			vm.isActive = false;
-			vm.current = null;
-			vm.select = select;
+			activate();
 
-			dataService.getData('main')
-				.then(function(data) {
-					vm.icons = data.icons;
-					vm.contact = data.contacts;
+			///////////////////
+
+			function activate() {
+				dataService.getData('main')
+					.then(function(data) {
+						vm.links = data.links;
+						vm.contact = data.contacts;
+					})
+
+				$rootScope.$on('$stateChangeSuccess', function() {
+					vm.state = $state.$current.name;
 				})
-
-
-			vm.links = ['home', 'about', 'resume', 'projects'];
-			function select (link) {
-				vm.isActive = false;
-				if(link == 'home')
-					vm.current = null;
-				else
-					vm.current = link;
 			}
+
+			function animate() {
+
+				$timeout(function() {
+					/* HEADER FADE IN */
+					var header = document.getElementById('header-info');
+					if (header.classList.contains('hide')) {
+						header.classList.remove('hide');
+					}
+
+					header.style.opacity = 0;
+
+					var fadeIn = function() {
+						header.style.opacity = +header.style.opacity + 0.01;
+
+						if (+header.style.opacity < 0.9) {
+							(window.requestAnimationFrame && requestAnimationFrame(fadeIn)) || setTimeout(fadeIn, 16)
+						}
+					};
+
+					fadeIn();
+				}, 500);
+				
+			}
+
 		}
 })();

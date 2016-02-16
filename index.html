@@ -3,7 +3,9 @@
 <head>
 	<title>Iris Ng - irislyng.me</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-
+	<link rel="icon" href="img/icon.ico">
+	<!-- <base href="/"> -->
+	
 	<!-- Libraries -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.min.js"></script>
@@ -13,9 +15,10 @@
 	<link type="text/css" rel="stylesheet" href="css/irislyng.css">
 	<!-- Media Queries -->
 	<link rel="stylesheet" media="(max-width: 570px)" href="css/max-570px.css">
-	<link rel="stylesheet" media="(max-width: 480px)" href="css/max-480px.css">
-	<link rel="icon" href="img/icon.ico">
 	
+	
+	<!-- JavaScript -->
+	<script src="js/animations.js"></script>
 	<!-- Modules -->
 	<script src="js/app.module.js"> </script>
 	<!-- Controllers -->
@@ -25,20 +28,18 @@
 	<script src="js/projects.controller.js"></script>
 	<script src="js/data.service.js"></script>
 	<script src="js/routes.js"></script>
+	<script src="js/scrollTo.directive.js"></script>
 
-	<base href="/">
 </head>
 
-<body data-ng-controller="MainController as main">
+<body onload="enter()" data-ng-controller="MainController as vm">
+	<div id="nav" class="navigation hide" ng-class="{'navigation-bg': vm.state != 'home'}">
+		<div class="navigation-links">
+			<a ng-repeat="link in vm.nav" ui-sref="{{link}}">{{link}}</a>
+	  	</div>
+	</div>	
 
-	<div class="navbar">
-		<div class="links">
-			<a ng-repeat="link in main.links" ui-sref="{{link}}">{{link}}</a>
-		</div>	
-	</div>
-
-	<div class="display" ui-view></div>
-
-
+	<div id="content" ui-view></div>
+		
 </body>
 </html>

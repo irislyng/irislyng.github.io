@@ -1,19 +1,30 @@
 <!-- Contact -->
 <div id="contact">
-	<div class="section-title">{{vm.contact.title}}</div>
-		<table>
-			<tr>
-				<td class="label">Email:</td>
-				<td class="details">{{vm.contact.gmail.one}}<span class="hide">null</span>{{vm.contact.gmail.two}}<span class="hide">null</span>{{vm.contact.gmail.three}}<span class="hide">null</span>
-				</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td class="details">{{vm.contact.mcmaster.one}}<span class="hide">null</span>{{vm.contact.mcmaster.two}}<span class="hide">null</span>{{vm.contact.mcmaster.three}}</td>
-			</tr>
-			<tr>
-				<td class="label">Phone:</td>
-				<td class="details">{{vm.contact.phone.one}}<span class="hide">null</span>{{vm.contact.phone.two}}<span class="hide">null</span>{{vm.contact.phone.three}}</td>
-			</tr>
-		</table>
+	<section class-"section">
+		<div class="sub">
+			<div class="section-title">Email</div>
+		
+			<div class="desc" data-ng-repeat="contact in vm.contact">
+				<a class="details" href="{{contact.select+contact.info}}" ng-if="contact.type=='email'">{{contact.info}}</a>
+			</div>
+		</div>
+
+		<div class="sub">
+			<div class="section-title">Phone</div>
+		
+			<div class="desc" data-ng-repeat="contact in vm.contact">
+				<a class="details" href="{{contact.select+contact.info}}" ng-if="contact.type=='phone'">{{contact.info}}</a>
+			</div>
+		</div>
+
+		<div class="sub">
+			<div class="section-title">Others</div>
+		
+			<div class="desc icon">
+				<span data-ng-repeat="link in vm.links">
+					<a class="details" href="{{link.link}}" target="{{link.target}}"><img ng-src="{{link.img}}" alt="{{link.name}}"></a>
+				</span>
+			</div>
+		</div>
+	</section>
 </div>

@@ -10,10 +10,17 @@
 	function AboutController (dataService) {
 		var vm = this;
 	  	vm.img = 'img/profile.jpg';
+	  	activate();
 
-	  	dataService.getData('main')
-	  		.then(function(data) {
-	  			vm.about = data.about;
-	  		})
+
+	  	//////////
+
+	  	function activate() {
+	  		dataService.getData('main')
+		  		.then(function(data) {
+		  			vm.about = data.about;
+		  		})
+	  	}
+	  	
 	}
 })();
