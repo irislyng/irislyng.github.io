@@ -1,7 +1,12 @@
 .navigation .navigation-links a {
 	margin: 0.1em 0em;
 	padding: 10px 5px;
-	font-size: 0.9em;
+	font-size: 0.85em;
+}
+
+#about .section-title {
+	font-size: 30px;
+	margin-bottom: 1em;
 }
 
 #about .sub .left,
