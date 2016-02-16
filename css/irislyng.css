@@ -47,6 +47,7 @@ body {
     margin: auto;
     /*background-color: #2d4252;*/
     height: 72px;
+    transition: 0.5s all linear;
 }
 
 .navigation-bg {
@@ -131,6 +132,7 @@ div.navigation-links a:hover:before, div.navigation-links a:hover:after
     width: 200px;
     margin: 24px 0px;
     opacity: 0.9;
+    transition: 0.7s all ease-in-out;
 }
 
 .header .info-contact a {
