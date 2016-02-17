@@ -35,8 +35,8 @@
 	"about" : {
 		"title": "About Me",
 		"content": [
-			"My name is Iris Ng, and I'd like to welcome you to my website! I'm a student currently in my 4th year of Software Engineering and Management at McMaster University. Software Engineering and Management is a 5 year program in which I am given the opportunity to take several core Commerce courses to understand the business and managerial aspect of engineering.",
-			"Currently, I'm learning more about back-end systems in web applications so I have knowledge on the full spectrum of web development. Because I'm proficient with AngularJS, I'm reading up on the MEAN stack to expand my skills so that I can become a full-stack engineer."
+			"My name is Iris Ng, and I'd like to welcome you to my website! I'm a student currently in my 4th year of Software Engineering and Management at McMaster University. Software Engineering and Management is a 5 year program in which I am able to take several core Commerce courses to understand the business and managerial aspect of engineering.",
+			"Currently, I'm learning about back-end systems in web applications so I have knowledge on the full spectrum of web development. I'm most comfortable using AngularJS, so I'm reading up on the MEAN stack to expand my technical skills in order to become a full-stack engineer."
 		]
   	}
 	
