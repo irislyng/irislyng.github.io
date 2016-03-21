@@ -8,6 +8,6 @@ document.addEventListener('DOMContentLoaded', function slideDown() {
 	}
 	setTimeout(function() {
 		nav.classList.add('navigation-show')
-	}, 500);
+	}, 700);
 }, false);
 

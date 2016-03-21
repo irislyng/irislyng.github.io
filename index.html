@@ -33,7 +33,7 @@
 
 </head>
 
-<body data-ng-controller="MainController as vm">
+<body data-ng-controller="MainController as vm" data-ng-init="vm.state = 'home'">
 	<div id="nav" class="navigation hide" ng-class="{'navigation-bg': vm.state != 'home'}">
 		<div class="navigation-links">
 			<a ng-repeat="link in vm.nav" ui-sref="{{link}}">{{link}}</a>
