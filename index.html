@@ -1,46 +1,38 @@
 <!DOCTYPE html>
-<html ng-app="app">	
+<html>
 <head>
 	<title>Iris Ng - irislyng.me</title>
+	<link rel="icon" href="icon.ico">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="icon" href="img/icon.ico">
-	<!-- <base href="/"> -->
-	
-	<!-- Libraries -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Satisfy" rel="stylesheet">
 
 	<!-- Stylesheets -->
-	<link type="text/css" rel="stylesheet" href="css/irislyng.css">
-	<!-- Media Queries -->
-	<link rel="stylesheet" media="(max-width: 600px)" href="css/max-600px.css">
-	<link rel="stylesheet" media="(max-width: 480px)" href="css/max-480px.css">
-	
-	
-	<!-- JavaScript -->
-	<script src="js/animations.js"></script>
-	<!-- Modules -->
-	<script src="js/app.module.js"> </script>
-	<!-- Controllers -->
-	<script src="js/main.controller.js"> </script>
-	<script src="js/about.controller.js"> </script>
-	<script src="js/resume.controller.js"></script>
-	<script src="js/projects.controller.js"></script>
-	<script src="js/data.service.js"></script>
-	<script src="js/routes.js"></script>
-	<script src="js/scrollTo.directive.js"></script>
+	<link type="text/css" rel="stylesheet" href="main.css">
 
+	<script src="https://use.fontawesome.com/7fc4390cd0.js"></script>
 </head>
+<body>
+	<div class="container">
+		<div class="main">
+			<h1 class="main-title">Iris Ng</h1>
+			<p class="main-tagline">Software Engineer &middot; McMaster University</p>
 
-<body data-ng-controller="MainController as vm" data-ng-init="vm.state = 'home'">
-	<div id="nav" class="navigation hide" ng-class="{'navigation-bg': vm.state != 'home'}">
-		<div class="navigation-links">
-			<a ng-repeat="link in vm.nav" ui-sref="{{link}}">{{link}}</a>
-	  	</div>
-	</div>	
-
-	<div id="content" ui-view></div>
-		
+			<a href="resume.pdf" target="_blank">
+				<i class="fa fa-3x fa-file-text-o"></i>
+			</a>
+			<a href="mailto:irislyng@gmail.com">
+				<i class="fa fa-3x fa-envelope-o"></i>
+			</a>
+			<a href="http://github.com/irislyng" target="_blank">
+				<i class="fa fa-3x fa-github"></i>
+			</a>
+			<a href="http://ca.linkedin.com/in/irislyng" target="_blank">
+				<i class="fa fa-3x fa-linkedin"></i>
+			</a>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
