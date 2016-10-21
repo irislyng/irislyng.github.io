@@ -1,18 +1,20 @@
-body {
-	font-size: 12px;
-	background-image: url('background-image-mobile.jpg');
-	background-size: cover;
-    background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
+@media only screen and (max-width: 570px) {
+	body {
+		font-size: 12px;
+		background-image: url('background-image-mobile.jpg');
+		background-size: cover;
+	    background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
 
-.container {
-	width: 350px;
-	height: 350px;
-	border-radius: 350px;
-}
+	.container {
+		width: 350px;
+		height: 350px;
+		border-radius: 350px;
+	}
 
-.main {
-	margin-top: 87.5px;
+	.main {
+		margin-top: 87.5px;
+}
 }
