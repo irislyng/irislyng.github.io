@@ -1,7 +1,7 @@
 @media screen and (max-width: 570px) {
 	body {
 		font-size: 12px;
-		background-image: url('background-image-mobile.jpg');
+		background-image: url('background-image.jpeg');
 		position: absolute; 
 	    height: 100%; 
 	    width: 100%;
