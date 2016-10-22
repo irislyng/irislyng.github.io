@@ -1,18 +1,15 @@
 @media screen and (max-width: 570px) {
+	html {
+		height:100%;
+	    background: url(background-image.jpeg) no-repeat center center fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+
 	body {
 		font-size: 12px;
-		background-image: url('background-image.jpeg');
-		position: absolute; 
-	    height: 100%; 
-	    width: 100%;
-	    left: 0;
-	    right: 0;
-	    top: 0;
-	    bottom: 0;
-	    background-position: 50% 50%; 
-	    -webkit-background-size: cover; 
-	    -moz-background-size: cover; 
-	    background-size: cover;
 	}
 
 	.container {
