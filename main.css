@@ -27,7 +27,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 
-	background-color: rgba(37, 56, 61, 0.4);
+	background-color: rgba(111, 134, 140, 0.3);
 
 	 -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
         -moz-animation: fadein 2s; /* Firefox < 16 */
