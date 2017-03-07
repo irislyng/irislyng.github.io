@@ -1,7 +1,7 @@
 @media screen and (max-width: 570px) {
 	html {
 		height:100%;
-	    background: url(background-image.jpeg) no-repeat center center fixed;
+	    background: url(background-image.jpg) no-repeat center center fixed;
 	    -webkit-background-size: cover;
 	    -moz-background-size: cover;
 	    -o-background-size: cover;

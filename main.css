@@ -1,13 +1,14 @@
-body {	
+body {
 	width: 100%;
 	height: auto;
 	margin: 0;
 
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
 	font-size: 16px;
-    color: #2b3149;
+    color: #fdffff;
 
-    background-image: url('background-image.jpeg');
+    background-image: url('background-image.jpg');
     background-size: cover;
     background-attachment: fixed;
 	background-position: center center;
@@ -26,7 +27,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 
-	background-color: rgba(132,140,167,0.3);
+	background-color: rgba(37, 56, 61, 0.4);
 
 	 -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
         -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -37,7 +38,7 @@ body {
 
 .main {
 	margin-top:112.5px;
-	text-align: center; 
+	text-align: center;
 }
 
 .main-title {
@@ -45,7 +46,7 @@ body {
 
 	font-family: 'Satisfy', cursive;
 	font-size: 64px;
-	font-weight: 300; 
+	font-weight: 300;
 }
 
 .main-tagline {
@@ -57,11 +58,11 @@ body {
 	padding: 16px;
 
 	text-decoration: none;
-	color: #2b3149;
+	color: #fdffff;
 }
 
 .main a:hover {
-	color: rgb(213, 217, 232);
+	color: #93c1b6;
 	transition: color 0.2s ease-in;
 }
 
